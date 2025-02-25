@@ -31,8 +31,16 @@
         <java.version>17</java.version>
         <bouncycastle.version>1.77</bouncycastle.version>
         <jsonwebtoken.version>0.12.3</jsonwebtoken.version>
+        <open-api-version>2.5.0</open-api-version>
     </properties>
     <dependencies>
+        <!-- SWAGGER DEPENDENCY -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>${open-api-version}</version>
+        </dependency>
+        <!-- SWAGGER DEPENDENCY -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
