@@ -5,7 +5,7 @@ import com.userservice.model.dto.request.UserRegisterRequest;
 import com.userservice.model.entity.UserEntity;
 import com.userservice.model.enums.UserType;
 import com.userservice.repository.UserRepository;
-import com.userservice.service.RegisterService;
+import com.userservice.service.UserRegisterService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class RegisterServiceImpl implements RegisterService {
+public class UserRegisterServiceImpl implements UserRegisterService {
     @Value("${admin.email}")
     private String adminEmail;
     private static final String EXCEPTION_MESSAGE = "The email are already in use!";
