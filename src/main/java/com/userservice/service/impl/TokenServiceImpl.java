@@ -20,6 +20,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -28,6 +29,7 @@ import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class TokenServiceImpl implements TokenService {
@@ -141,6 +143,8 @@ public class TokenServiceImpl implements TokenService {
 
         authorities.add(new SimpleGrantedAuthority(userType.name()));
 
+
+        log.info("Returning authentication for token {}", jwt);
         return UsernamePasswordAuthenticationToken.authenticated(jwt, null, authorities);
     }
 
