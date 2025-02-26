@@ -1,8 +1,7 @@
 # User Service
 
-The **User Service** is a RESTful API built with Java and Spring Boot, designed to manage user-related operations such as registration, authentication.
-I will try to use the more advanced style to build real project applications for this project.
-
+The **User Service** is a RESTful API built with Java and Spring Boot, designed to manage user-related operations such as registration, and authentication.
+I am taking a more advanced and structured approach to building this project, focusing on **scalability, maintainability, and modern best practices** to create a **production-ready application**. 🚀
 ## Features
 
 - **User Registration**: Allows users to create an account.
