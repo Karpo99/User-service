@@ -12,14 +12,14 @@ I am taking a more advanced and structured approach to building this project, fo
 ## Technologies Used
 
 - **Java 17** - Programming language.
-- **Spring Boot 3** - Framework for building REST APIs. [Learn More](https://spring.io/projects/spring-boot)
-- **Spring Security** - Security framework for authentication and authorization. [Learn More](https://spring.io/projects/spring-security)
-- **Spring Data JPA** - ORM for database management. [Learn More](https://spring.io/projects/spring-data-jpa)
-- **MySQL** - Relational database for storing user data. [Learn More](https://www.mysql.com/)
-- **Docker** - Containerization platform for deployment. [Learn More](https://www.docker.com/)
-- **Jib** - Containerization tool for optimized image building. [Learn More](https://github.com/GoogleContainerTools/jib)
-- **Swagger (Springdoc OpenAPI)** - API documentation and testing. [Learn More](https://swagger.io/)
-- **Postman** - API testing tool for validating responses. [Learn More](https://www.postman.com/)
+- **Spring Boot 3** - Framework for building REST APIs.
+- **Spring Security** - Security framework for authentication and authorization. 
+- **Spring Data JPA** - ORM for database management. 
+- **MySQL** - Relational database for storing user data. 
+- **Docker** - Containerization platform for deployment. 
+- **Jib** - Containerization tool for optimized image building.
+- **Swagger (Springdoc OpenAPI)** - API documentation and testing. 
+- **Postman** - API testing tool for validating responses. 
 
 ## Getting Started
 
