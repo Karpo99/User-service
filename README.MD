@@ -1,8 +1,7 @@
 # User Service
 
-The **User Service** is a RESTful API built with Java and Spring Boot, designed to manage user-related operations such as registration, authentication, and profile management.
-In this project I try to use more advanced style for building real project application.
-
+The **User Service** is a RESTful API built with Java and Spring Boot, designed to manage user-related operations such as registration, and authentication.
+I am taking a more advanced and structured approach to building this project, focusing on **scalability, maintainability, and modern best practices** to create a **production-ready application**. 🚀
 ## Features
 
 - **User Registration**: Allows users to create an account.
@@ -13,14 +12,14 @@ In this project I try to use more advanced style for building real project appli
 ## Technologies Used
 
 - **Java 17** - Programming language.
-- **Spring Boot 3** - Framework for building REST APIs. [Learn More](https://spring.io/projects/spring-boot)
-- **Spring Security** - Security framework for authentication and authorization. [Learn More](https://spring.io/projects/spring-security)
-- **Spring Data JPA** - ORM for database management. [Learn More](https://spring.io/projects/spring-data-jpa)
-- **MySQL** - Relational database for storing user data. [Learn More](https://www.mysql.com/)
-- **Docker** - Containerization platform for deployment. [Learn More](https://www.docker.com/)
-- **Jib** - Containerization tool for optimized image building. [Learn More](https://github.com/GoogleContainerTools/jib)
-- **Swagger (Springdoc OpenAPI)** - API documentation and testing. [Learn More](https://swagger.io/)
-- **Postman** - API testing tool for validating responses. [Learn More](https://www.postman.com/)
+- **Spring Boot 3** - Framework for building REST APIs.
+- **Spring Security** - Security framework for authentication and authorization. 
+- **Spring Data JPA** - ORM for database management. 
+- **MySQL** - Relational database for storing user data. 
+- **Docker** - Containerization platform for deployment. 
+- **Jib** - Containerization tool for optimized image building.
+- **Swagger (Springdoc OpenAPI)** - API documentation and testing. 
+- **Postman** - API testing tool for validating responses. 
 
 ## Getting Started
 
