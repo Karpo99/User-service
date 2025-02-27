@@ -124,7 +124,6 @@ public class TokenServiceImpl implements TokenService {
         final Claims payload = claimsJws.getPayload();
         final JwsHeader jwsHeader = claimsJws.getHeader();
 
-
         final Jwt jwt = new Jwt(
                 token,
                 payload.getIssuedAt().toInstant(),
@@ -142,7 +141,6 @@ public class TokenServiceImpl implements TokenService {
         final List<SimpleGrantedAuthority> authorities = new ArrayList<>();
 
         authorities.add(new SimpleGrantedAuthority(userType.name()));
-
 
         log.info("Returning authentication for token {}", jwt);
         return UsernamePasswordAuthenticationToken.authenticated(jwt, null, authorities);

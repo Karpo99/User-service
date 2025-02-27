@@ -20,7 +20,7 @@ public enum ConfigurationParameter {
             msXBAzrILvW5+POSq4u1vNlzSwdLe+AZ6bnCwQVrqvMn/I7JT+4+lY8BsP/gMRQL
             awIDAQAB
             -----END PUBLIC KEY-----
-                        """),
+            """),
     AUTH_PRIVATE_KEY("""
             -----BEGIN PRIVATE KEY-----
             MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDUeZncDfv0zpG/

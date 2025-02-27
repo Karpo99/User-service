@@ -10,5 +10,4 @@ public enum TokenType {
     BEARER("Bearer");
 
     private final String value;
-
 }

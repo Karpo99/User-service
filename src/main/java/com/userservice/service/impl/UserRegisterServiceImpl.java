@@ -16,11 +16,11 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class UserRegisterServiceImpl implements UserRegisterService {
-    @Value("${admin.email}")
-    private String adminEmail;
     private static final String EXCEPTION_MESSAGE = "The email are already in use!";
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
+    @Value("${admin.email}")
+    private String adminEmail;
 
     @Override
     public void registerUser(UserRegisterRequest request) {

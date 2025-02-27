@@ -1,7 +1,10 @@
 # User Service
 
-The **User Service** is a RESTful API built with Java and Spring Boot, designed to manage user-related operations such as registration, and authentication.
-I am taking a more advanced and structured approach to building this project, focusing on **scalability, maintainability, and modern best practices** to create a **production-ready application**. 🚀
+The **User Service** is a RESTful API built with Java and Spring Boot, designed to manage user-related operations such
+as registration, and authentication.
+I am taking a more advanced and structured approach to building this project, focusing on **scalability,
+maintainability, and modern best practices** to create a **production-ready application**. 🚀
+
 ## Features
 
 - **User Registration**: Allows users to create an account.
@@ -13,13 +16,13 @@ I am taking a more advanced and structured approach to building this project, fo
 
 - **Java 17** - Programming language.
 - **Spring Boot 3** - Framework for building REST APIs.
-- **Spring Security** - Security framework for authentication and authorization. 
-- **Spring Data JPA** - ORM for database management. 
-- **MySQL** - Relational database for storing user data. 
-- **Docker** - Containerization platform for deployment. 
+- **Spring Security** - Security framework for authentication and authorization.
+- **Spring Data JPA** - ORM for database management.
+- **MySQL** - Relational database for storing user data.
+- **Docker** - Containerization platform for deployment.
 - **Jib** - Containerization tool for optimized image building.
-- **Swagger (Springdoc OpenAPI)** - API documentation and testing. 
-- **Postman** - API testing tool for validating responses. 
+- **Swagger (Springdoc OpenAPI)** - API documentation and testing.
+- **Postman** - API testing tool for validating responses.
 
 ## Getting Started
 
@@ -163,13 +166,17 @@ The User Service exposes the following RESTful endpoints:
 Below is a typical flow for a user interacting with the User Service API:
 
 1. **Registration**: The user sends a `POST` request to `/users/register` with their details.
-2. **Authentication**: Upon successful registration, the user authenticates by sending a `POST` request to `/users/login` to receive JWT & refresh tokens.
-3. **Access Protected Routes**: The user includes the JWT token in the `Authorization` header to access protected routes.
-4. **Token Refresh**: When the access token expires, the user can send a `POST` request to `/users/refresh` with their refresh token.
+2. **Authentication**: Upon successful registration, the user authenticates by sending a `POST` request to
+   `/users/login` to receive JWT & refresh tokens.
+3. **Access Protected Routes**: The user includes the JWT token in the `Authorization` header to access protected
+   routes.
+4. **Token Refresh**: When the access token expires, the user can send a `POST` request to `/users/refresh` with their
+   refresh token.
 5. **Logout**: The user can log out by sending a `POST` request to `/users/logout` to invalidate their tokens.
 
 ## Swagger Documentation
 
 The User Service integrates Swagger for API documentation.
 
-- **Access Swagger UI**: After running the application, navigate to `http://localhost:8080/swagger-ui/index.html` to view the API documentation.
+- **Access Swagger UI**: After running the application, navigate to `http://localhost:8080/swagger-ui/index.html` to
+  view the API documentation.

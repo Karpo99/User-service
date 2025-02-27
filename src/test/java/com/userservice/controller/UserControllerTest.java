@@ -1,5 +1,11 @@
 package com.userservice.controller;
 
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 import com.userservice.base.AbstractRestControllerTest;
 import com.userservice.model.Token;
 import com.userservice.model.dto.request.TokenInvalidateRequest;
@@ -21,11 +27,6 @@ import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.doNothing;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 public class UserControllerTest extends AbstractRestControllerTest {
     @MockitoBean
@@ -160,7 +161,8 @@ public class UserControllerTest extends AbstractRestControllerTest {
 
         //Given
         String validToken = "validToken";
-        UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken("user", "password");
+        UsernamePasswordAuthenticationToken authToken =
+                new UsernamePasswordAuthenticationToken("user", "password");
 
         //When
         when(tokenService.getAuthentication(validToken)).thenReturn(authToken);
