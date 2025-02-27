@@ -22,7 +22,6 @@ public class CustomBearerAuthFilter extends OncePerRequestFilter {
     private final TokenService tokenService;
     private final InvalidTokenService invalidTokenService;
 
-
     @Override
     protected void doFilterInternal(
             @NonNull final HttpServletRequest request,
