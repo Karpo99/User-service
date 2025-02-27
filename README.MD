@@ -21,6 +21,7 @@ maintainability, and modern best practices** to create a **production-ready appl
 - **MySQL** - Relational database for storing user data.
 - **Docker** - Containerization platform for deployment.
 - **Jib** - Containerization tool for optimized image building.
+- **GitHub Actions** - Simple CI/CD
 - **Swagger (Springdoc OpenAPI)** - API documentation and testing.
 - **Postman** - API testing tool for validating responses.
 
